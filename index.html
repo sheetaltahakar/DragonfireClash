@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack the Dragon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" style="text-align: center;background-color: rgba(240, 240, 240, 0.5); width: 80%; height: 70%;">
+        <h1 style=" font-size: 36px;margin-bottom: 20px;">Attack the Dragon</h1>
+        <div class="game">
+            <div id="turn-message">Player's Turn</div>
+            <div class="player">
+                <h2>Player</h2>
+                <div class="health-bar">
+                    <div id="player-health-bar"></div>
+                </div>
+                <p id="player-health">100</p>
+                <button id="player-attack">Attack</button>
+                <button id="special-attack">Special Attack</button>
+                <button id="heal">Heal</button>
+            </div>
+            <div class="dragon">
+                <h2>Dragon</h2>
+                <div class="health-bar">
+                    <div id="dragon-health-bar"></div>
+                </div>
+                <p id="dragon-health">100</p>
+            </div>
+        </div>
+        <p style="background-color: cornsilk;" id="game-status"></p>
+        <div id="toast-message" class="toast-message toast-top-center" style="margin-top: 8px;text-align: center;">
+            <span id="toast-text"></span>
+        </div>
+        <button id="restart-button">Restart Game</button>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

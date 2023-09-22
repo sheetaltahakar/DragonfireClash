@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(https://flxt.tmsimg.com/assets/p7895608_i_h10_aa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.player, .dragon {
+  border: 2px solid #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  background-color: #333;
+  width: 250px;
+  height: 250px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.health-bar {
+  background-color: #555;
+  height: 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+#player-health-bar, #dragon-health-bar {
+  height: 100%;
+  background-color: #4caf50;
+  width: 100%;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out;
+}
+
+button {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 10px 20px;
+  border: none; 
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+#turn-message {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.toast-message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 66, 66, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: none;
+  z-index: 9999;
+}
+
+
+
+
